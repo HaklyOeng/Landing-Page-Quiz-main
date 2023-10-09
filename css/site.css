@@ -1,0 +1,131 @@
+:root {
+    --cf-dark: #212121;
+    --cf-light: #ebebeb;
+    --cf-darkblue: #00223d;
+    --cf-highlight: #fae100;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+
+    /* background color */
+    background-color: var(--cf-darkblue);
+    
+    /* background image */
+    background-image: url("/img/LandingPage_576.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Body Font */
+    font-family: "roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.text-cf-light {
+    color: var(--cf-light);
+}
+
+#rocketLogo {
+    max-width: 40px;
+}
+
+.mainTitle {
+    font-family: "racing sans one", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    line-height: 2rem;
+}
+
+.subTitle {
+    font-family: "fira sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.12rem;
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Media query */
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    body {
+        background-image: url("/img/LandingPage_1200.png");
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        background-image: url("/img/LandingPage_992.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-image: url("/img/LandingPage_1200.png");
+
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-image: url("/img/LandingPage_1400.png");
+
+    }
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    body {
+        background-image: url("/img/LandingPage_1920.png");
+        background-position: 90%;
+        
+
+    }
+    .mainTitle {
+        font-family: "racing sans one", sans-serif;
+        text-transform: uppercase;
+        font-size: 4.6rem;
+        line-height: 3.8rem;
+    }
+    
+    .subTitle {
+        font-family: "fira sans", sans-serif;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 1.97rem;
+        line-height: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+}
